@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+    <link rel="icon" href="./res/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script>
+      const customWindowOnLoad = () => {
+        document.addEventListener('readystatechange', () => {
+          if (document.readyState == 'interactive')
+            console.log('beforeDOMContentLoaded')
+          if (document.readyState == 'complete')
+            console.log('afterDOMContentLoaded')
+        })
+      }
+      customWindowOnLoad()
+    </script>
+  </head>
+
+  <body>
+    <header class="header"></header>
+    <aside class="aside">
+      <div class="contact">Иван Петров</div>
+      <div class="contact">Петр Иванов</div>
+      <div class="contact">Николай Чадов</div>
+      <div class="contact">Иван Петров</div>
+      <div class="contact">Петр Иванов</div>
+      <div class="contact">Николай Чадов</div>
+      <div class="contact">Иван Петров</div>
+      <div class="contact">Петр Иванов</div>
+      <div class="contact">Николай Чадов</div>
+    </aside>
+    <main class="main">
+      <div class="message">Сообщение</div>
+      <div class="message">Сообщение</div>
+      <div class="message">Сообщение</div>
+      <div class="message">Сообщение</div>
+      <div class="message">Сообщение</div>
+      <div class="message">Сообщение</div>
+      <div class="message">Сообщение</div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    'header header'
+    'aside main'
+    'footer footer';
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 50px 1fr 100px;
+  height: 100vh;
+  min-width: 500px;
+  background-color: #666;
+}
+
+.header {
+  grid-area: header;
+  background-color: #67b9c6;
+}
+
+.aside {
+  grid-area: aside;
+  overflow-y: auto;
+  background-color: #c6b967;
+}
+
+.main {
+  grid-area: main;
+  overflow-y: auto;
+  background-color: #9ca2cb;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #a2cb9c;
+}
+
+.contact {
+  padding: 10px;
+}
+
+.message {
+  padding: 20px;
+}
